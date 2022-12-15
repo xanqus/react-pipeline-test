@@ -1,6 +1,5 @@
 pipeline {
-    // agent any
-
+    agent any
 
     // agent {
     //     docker {
@@ -8,9 +7,9 @@ pipeline {
     //     }
     // }
 
-    agent {
-        label 'main-host'
-    }
+    // agent {
+    //     label 'main-host'
+    // }
 
     // tools {
     //     docker "latest"
