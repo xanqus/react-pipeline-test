@@ -2,15 +2,15 @@ pipeline {
     // agent any
 
 
-    // agent {
-    //     docker {
-    //         image 'node:16.13.1-alpine'
-    //     }
-    // }
-
-    tools {
-        docker "latest"
+    agent {
+        docker {
+            image 'node:16.13.1-alpine'
+        }
     }
+
+    // tools {
+    //     docker "latest"
+    // }
     stages {
         stage('connect test'){
             steps{
