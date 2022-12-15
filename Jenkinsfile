@@ -1,6 +1,11 @@
 pipeline {
     agent any
 
+    tools {
+        docker 'latest'
+        // jdk 'your_jdk_version'
+    }
+
     stages {
         stage('connect test'){
             steps{
