@@ -9,7 +9,7 @@ pipeline {
     // }
 
     tools {
-        docker 'docker-latest'
+        docker "latest"
     }
     stages {
         stage('connect test'){
