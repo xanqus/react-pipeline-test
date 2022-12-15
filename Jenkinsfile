@@ -33,5 +33,12 @@ pipeline {
                 sh 'npm run build'
             }
         }
+
+        stage('Docker build') {
+            agent any
+            steps {
+                sh 'docker build -t my-react-app:latest .'
+            }
+        }
     }
 }
